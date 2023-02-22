@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var point_1 = require("./point");
+var TroisPoints_1 = require("./TroisPoints");
+var p1 = new point_1.Point(1, 2);
+var p2 = new point_1.Point(3, 2);
+var p3 = new point_1.Point(1, 3);
+var triplet = new TroisPoints_1.TroisPoints(p1, p2, p3);
+var x;
+x = p1.calculerDistance(p2);
+console.log(x);
+x = p1.calculerMilieu(p2);
+console.log(x);
+x = triplet.TesterAlignement();
+console.log(x);
+x = triplet.estIsocele();
